@@ -1,0 +1,831 @@
+ros-humble-kangaroo-controller-configuration (2.14.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 06 Aug 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.14.0-1jammy) jammy; urgency=high
+
+  * Remove default empty option on the side argument
+    See merge request robots/kangaroo_robot!169
+  * Remove default empty option on the side argument
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 30 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.13.2-1jammy) jammy; urgency=high
+
+  * Change the imu sensor broadcaster to 100 Hz
+    See merge request robots/kangaroo_robot!166
+  * Change the imu sensor broadcaster to 100 Hz
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 06 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.13.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 06 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.13.0-1jammy) jammy; urgency=high
+
+  * Fix gravity compensation frames and launch
+    See merge request robots/kangaroo_robot!164
+  * Add interface type as an argument for the gravity compensation
+  * Fix the tip link of the foot
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sun, 05 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.12.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sun, 05 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.12.0-1jammy) jammy; urgency=high
+
+  * Adding pid gains for force and impedance-current + force interface added
+    See merge request robots/kangaroo_robot!160
+  * Remove commented lines of gains
+  * Changed to stiffness and dumping
+  * Adding pid gains for force and impedance-current + force interface added
+  * Contributors: Sai Kishor Kothakota, antoniomartinez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sat, 04 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.11.2-1jammy) jammy; urgency=high
+
+  * Add pal_local_joint_control dependency
+    See merge request robots/kangaroo_robot!162
+  * Add pal_local_joint_control dependency
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 03 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.11.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 03 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.11.0-1jammy) jammy; urgency=high
+
+  * Add force torque sensor related changes
+    See merge request robots/kangaroo_robot!157
+  * Use ft_sensor_broadcaster instead of ft_sensor_controller
+  * Impedance local joint control for leg length
+    See merge request robots/kangaroo_robot!147
+  * Adding impedance local joint control params
+  * Contributors: Sai Kishor Kothakota, Óscar Martínez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 03 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.10.0-1jammy) jammy; urgency=high
+
+  * Kinematic WBC ROS 2 position control parameters
+    See merge request robots/kangaroo_robot!119
+  * Kinematic WBC ROS 2 position control parameters
+  * gravity compensation controller config
+    See merge request robots/kangaroo_robot!154
+  * Add condition to gravity compensation dependency
+  * Fix the parameters to the new namespaced changes
+  * fixed CL frames names
+  * Add new parameters
+  * gravity controller - DOES NOT WORK because our controller does not take into account the weight of femur and knee
+  * Add impedance JTC controllers for legs and pelvis
+    See merge request robots/kangaroo_robot!151
+  * Add impedance JTC controllers for legs and pelvis
+  * Actuator level leg controller
+    See merge request robots/kangaroo_robot!135
+  * leg controller now accepts arg to define interface level, actuator or joint
+  * Update JTC goal tolerances + pelvis JTC effort controller
+    See merge request robots/kangaroo_robot!153
+  * add config for pelvis jtc effort controller
+  * add tolerance for leg length in jtc controllers
+  * Contributors: Daniel Costanzi, Luca Marchionni, Noel Jimenez, Sai Kishor Kothakota, danielcostanzi, oscarmartinez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 01 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.9.0-1jammy) jammy; urgency=high
+
+  * When parsed activate to False, ignore unload_on_kill option
+  * Add unload_on_kill and activate argument to default_controllers launch
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 26 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.8.0-1jammy) jammy; urgency=high
+
+  * reverted changes since they are now in a different branch
+  * leg controller now accepts arg to define interface level, actuator or joint
+  * Contributors: danielcostanzi
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 25 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.7.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 23 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.6.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sun, 21 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.6.0-1jammy) jammy; urgency=high
+
+  * Add condition no-imu for torso imu
+  * Add arguments on sensor yaml to add 2 different imus
+  * Add base_imu on the broadcaster module
+  * Add broadcaster for the base imu if exists
+  * Add leg JTC effort base controller
+  * Contributors: Aina, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 18 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.5.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 12 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.5.1-1jammy) jammy; urgency=high
+
+  * Merge branch 'rename/pid_controller/module' into 'humble-devel'
+    Rename pid_controllers module to actuators_pid_controller module
+    See merge request robots/kangaroo_robot!125
+  * Rename pid_controllers module to actuators_pid_controller module
+  * Contributors: Noel Jimenez, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 09 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.5.0-1jammy) jammy; urgency=high
+
+  * Merge branch 'feat/add_ankle_ft' into 'humble-devel'
+    Add ankle ft
+    See merge request robots/kangaroo_robot!110
+  * Change is_ankle to location to better scalability
+  * Fix flake8
+  * Add ft ankle broadcasters
+  * Merge branch 'feat/add_feet_type' into 'humble-devel'
+    Add feet type
+    See merge request robots/kangaroo_robot!108
+  * Remove feet_type argument on the controllers
+  * Fix flake8 tests
+  * Remove legs_type
+  * Contributors: Aina, Aina Irisarri
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 09 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.4.5-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 04 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.4.4-1jammy) jammy; urgency=high
+
+  * Add default_controllers module
+  * Contributors: Noel Jimenez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 03 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.4.3-1jammy) jammy; urgency=high
+
+  * Merge branch 'fix/pid_controllers' into 'humble-devel'
+    PID Controllers
+    See merge request robots/kangaroo_robot!117
+  * Add missing actuator_pid_controllers dependency
+  * Fix module
+  * Fix flake8
+  * Adding PID controllers
+  * Contributors: Sai Kishor Kothakota, Óscar Martínez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sun, 31 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.4.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 29 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.4.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 28 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.4.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 27 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.3.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 19 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.3.1-1jammy) jammy; urgency=high
+
+  * Merge branch 'fix/end_effector/arg_parsing' into 'humble-devel'
+    Fix end effector arg parsing
+    See merge request robots/kangaroo_robot!107
+  * Fix the default controllers launch file
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 14 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.3.0-1jammy) jammy; urgency=high
+
+  * Merge branch 'fix/import' into 'humble-devel'
+    Fix LaunchConfiguration import
+    See merge request robots/kangaroo_robot!105
+  * Fix LaunchConfiguration import
+  * Merge branch 'fix/remove-duplicated' into 'humble-devel'
+    Remove duplication from import
+    See merge request robots/kangaroo_robot!104
+  * Remove duplication from import
+  * Merge branch 'feat/add_tests' into 'humble-devel'
+    Feat/add tests
+    See merge request robots/kangaroo_robot!99
+  * Add tests on controller_config
+  * Merge branch 'fix/kangaroo_description' into 'humble-devel'
+    Fix/kangaroo description
+    See merge request robots/kangaroo_robot!98
+  * Change condition for the launch description
+  * Rename end_effector_side to side
+  * Use ft_sensor parameter for launch arguments
+  * Update module arguments
+  * Add arm configuration and condition for no arm and 4dof
+  * Add ft sensors
+  * Merge branch 'feat/move_arm' into 'humble-devel'
+    Move arm to pal_sea_arm_description
+    See merge request robots/kangaroo_robot!97
+  * Split end effectors into sides
+  * Merge branch 'fix/remove-prints' into 'humble-devel'
+    Remove leftover prints
+    See merge request robots/kangaroo_robot!96
+  * Remove leftover prints
+  * Contributors: Aina, Aina Irisarri, Noel Jimenez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 12 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.2.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 14 Apr 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.1.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 06 Mar 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.1.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 05 Mar 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.1.0-1jammy) jammy; urgency=high
+
+  * reduce broadcaster update rate and uncomment the meshes
+  * test to make inference work
+  * Contributors: Sai Kishor Kothakota, sergiacosta
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 25 Feb 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.0.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 10 Feb 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (2.0.0-1jammy) jammy; urgency=high
+
+  * set last ros1 version
+  * updated version and metadeta
+  * added default broadcasters module
+  * renamed default broadcasters launchfile
+  * created logic for leg direct effort controllers
+  * created default position controllers
+  * created laucnh files for ros2 controllers
+  * added controllers config files
+  * updated packages to ros2
+  * removed old files
+  * Contributors: sergiacosta
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 04 Feb 2026 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.3.0-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Add no control configuration for the gripper joints
+  * add support for arms_7dof_gripper_no_pelvis in the launcher
+  * updated actuator_pids
+  * Add missing full_7dof_gripper condition in the launcher.launch
+  * fixed robot_type logic for pelvis controller
+  * updated actuator PID gains
+  * added controller parameters for gripper finger joint
+  * added gripper configuration parameters
+  * Remove the commented args
+  * Change the motor torque constant
+  * set test bench gains for leg motors
+  * updated possible robot configurations
+  * added local joint for 7dof arm
+  * added arm_type and robot_type argument logic
+  * updated config files for 7dof arm
+  * Contributors: Sai Kishor Kothakota, sergiacosta
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 04 Nov 2025 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.2.3-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 25 Sep 2025 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.2.2-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Fix the arm_right launch local joint control launch file
+  * Add missing pelvis joints impedance control parameters
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 24 Sep 2025 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.2.1-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Change the rate limiter of the leg 1 joints
+  * Change the  impedance gains of the leg length
+  * Use the default stiffness and damping used for the walking
+  * Add demos_mode argument defaulting to true
+  * Fix the spacing
+  * Apply 1 suggestion(s) to 1 file(s)
+  * Try to find the robot_type with path checking
+  * define and parse robot_type argument downstream
+  * Propagate changes from VIVE teleoperation + Automatica + RL
+  * Add ef frames for the WBC
+  * Contributors: Adria Roig, Sai Kishor Kothakota, ileniaperrella
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 23 Sep 2025 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.2.0-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 15 Sep 2025 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.18-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Simplify the default_controllers launch file
+  * Remove ft_sensor_estimator from the bringup controller
+  * Set old impedance gains
+  * Set arguments and launch files for different robot configurations
+  * 0.1.17
+  * Update Changelog
+  * add parameters of kangaroo-4 tests
+  * adding parameters for pelvis and legs
+  * Add torso.launch
+  * Testing on the robot
+  * tested with pal_physics_simulator
+  * Contributors: Adria Roig, Adrià Roig, Luca Marchionni, Sai Kishor Kothakota, ileniaperrella
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 22 May 2025 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.17-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * add parameters of kangaroo-4 tests
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 05 Mar 2025 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.16-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adrià Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 03 Feb 2025 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.15-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Change transmission parameters of the leg length
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 30 Sep 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.14-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 16 Sep 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.13-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 10 Sep 2024 12:56:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.12-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adrià Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 10 Sep 2024 12:17:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.11-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * change the default safety parameter for kangaroo-3 as they need tuning
+  * Contributors: Adrià Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 01 Aug 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.10-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * add initialization tolerance to the ankle transmission parameters
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 25 Jul 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.9-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adrià Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 16 Jul 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.8-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Fix gazebo PID contact gains
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 12 Jul 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.7-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 11 Jul 2024 14:56:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.6-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 11 Jul 2024 10:30:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.5-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * add missing controller dependencies
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 09 Jul 2024 18:08:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.4-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Don't use integral factors for the Hip RPY joints
+  * Remove extra unused args
+  * Add FT sensor estimator directly to launch on startup
+  * Set the zeros properly
+  * update the leg length position PID gains tuned at TUWien
+  * Put back all joint torque/force sensor offset to 0 in actuator_parameters_specific_params.yaml
+  * Enable default safety
+  * Update configuration files from latest value tested on Kangaroo 3
+  * Add arguments to enable / disable torque control for specific transmissions
+  * Fix wrong impedance gain in leg_left_1_joint
+  * Add new transmission parameters after fix ankle transmission
+  * delete gravity compensation parameters on restart of controller
+  * Add torque control gains of kangaroo-3
+  * Reduce by factor of 100 the integral gain of the position loop for hip actuators
+  * reduce the position Kp of the leg right 1 motor
+  * fix the PID parameters to be double
+  * add actuator_pid_controllers dependency
+  * added the gains corresponding to the kangaroo 3
+  * Contributors: Adria Roig, Pierre Fernbach, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 09 Jul 2024 18:03:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.3-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 30 Apr 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.2-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 19 Apr 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.1-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 18 Apr 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.1.0-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 04 Apr 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.30-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Apply transmission_parameters update as per code review
+  * Parameterize the version of Hip Z installed on the robot and update the parameters
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 10 Jan 2024 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.29-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Modify parameters for direct_position_control
+  * Modify parameters for direct_position_control
+  * Add parameters for direct_position_control
+  * Contributors: Adria Roig, Adrià Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 08 Nov 2023 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.28-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 04 Jul 2023 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.27-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * added direct_position_control config and launch files
+  * added direct_current_control files
+  * Update the actuator and safety parameters of the joints
+  * Update the inertia shaping analytic parameters from the robot
+  * use direct_torque_control instead of no_control in the force_control launch files
+  * add new bringup controllers and use common hardware file based on ft_sensors argument
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 07 Feb 2023 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.26-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Update homing and launch force_torque_sensor_controller when ft_sensors is true
+  * Contributors: Adrià Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 17 Jan 2023 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.25-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * update the walking controller parameters as in the robot
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 12 Jan 2023 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.24-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * add some minor fixes
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 22 Dec 2022 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.23-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 03 Oct 2022 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.22-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 30 Sep 2022 14:21:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.21-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * 0.0.20
+  * Update Changelog
+  * update gains and launch files from the robot
+  * 0.0.19
+  * Update Changelog
+  * added more package dependencies to the packages
+  * added IK plugin
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 30 Sep 2022 10:25:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.18-1jammy) jammy; urgency=high
+
+  * Update changelogs
+  * updated parameters, compared with full model
+  * Contributors: Narcis Miguel
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 25 Mar 2022 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.17-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Revert contact PIDs to old values
+    This reverts commit d66f0b433452aaf0a4c34e11e3435e565833988d.
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 14 Mar 2022 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.16-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * set the position controllers back in default controllers
+  * update the walking controlle parameters
+  * update contact PIDs
+  * Add desired step time parameter
+  * update gazebo PID gains
+  * update default controllers launch file
+  * Added walking controller parameters
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 11 Mar 2022 12:01:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.15-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 11 Mar 2022 10:24:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.14-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 11 Mar 2022 09:10:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.13-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 26 Jan 2022 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.12-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * fix the wrong transmission parameters for hip z
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 10 Jan 2022 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.11-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Fix IMU wrong orientation
+  * Tune torque control params
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 28 Dec 2021 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.10-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 22 Nov 2021 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.9-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Add torque control in local joint control launcher
+  * Launch torque control when local joint control type specified
+  * Fix typo in the torque control launch files
+  * Tune filter and torque control gains
+  * update transmission parameters
+  * Add launch files fro launching toruqe control in both legs
+  * Add torque offsets + impedance files
+  * tuned pids
+  * Add no control parameters
+  * Changes to fix issues with tf
+  * Tune torque control in the real robot
+  * Changes for run torque control on the real robot
+  * small tuning
+  * Contributors: Adria Roig, Sai Kishor Kothakota, enricomingo
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 18 Nov 2021 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.8-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * param name fix
+  * Adding hip z custom transmission
+  * Contributors: Sai Kishor Kothakota, narcismiguel
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 10 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.7-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * remove the launch of non existing current_limit_controllers
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 07 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.6-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * added effort based joint trajectory controllers configuration
+  * moved the position joint trajectory config files to position folder
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 06 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.5-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 03 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.4-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * remove the starting of force_torque_sensor_controller
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 02 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.3-1jammy) jammy; urgency=high
+
+  * Updated Changelog
+  * Contributors: Victor Lopez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 30 Aug 2021 10:51:00 -0000
+
+ros-humble-kangaroo-controller-configuration (0.0.2-1jammy) jammy; urgency=high
+
+  * Add changelog
+  * Add bs parameters in the actuator parameters
+  * Increase damping for leg_1_joint
+  * Remove tibia link nad mimic joint
+  * Add collision meshes for knee_link and femur_link
+  * Tune gazebo pids contact gains
+  * Create actuator parameters yamls
+  * cleanup the selective_rosparam_loader
+  * added selective_rosparam_loader launch file
+  * load the transmission parameters with bringup
+  * Add F/T sensor
+  * Fix primatic model. Add IMU. Tune PIDS
+  * Change to prismatic model with mimic joints
+  * Update the gazebo pid files with the leg length joints
+  * remove prismatic model pid files and position controller configuration
+  * Update the gazebo and position controllers launch file
+  * added changes of single URDF with leg length and dynamic model
+  * Update the new PID gains and the initial joint positions for dynamic model
+  * Tune PIDs and update the leg 2 position for the new changes of Torso
+  * Tuned the gains a bit for the old mass and inertia of the base_link
+  * Update pid gains for contact_prismatic
+  * add different pids values when simulating in contact
+  * Clean the way different files are loaded depending on prismatic arg
+  * Add different pids config file for prismatic model
+  * Update joint_trajectory_controllers for prismatic model regarding the change in the joints names
+  * update position_controllers.launch to use the 'prismatic' parameter
+  * added transmission parameters yaml
+  * tuned PIDs of the gazebo sim
+  * add the Gazebo joint pids yaml
+  * launch and load both legs position controllers
+  * added joint state controller configuration and launch
+  * added left and right leg joint trajectory controller configuration
+  * First commit
+  * Contributors: Adria Roig, Luca Marchionni, Pierre Fernbach, Sai Kishor Kothakota, Victor Lopez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 30 Aug 2021 09:26:00 -0000
+
+
