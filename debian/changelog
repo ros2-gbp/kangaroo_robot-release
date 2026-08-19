@@ -1,0 +1,695 @@
+ros-humble-kangaroo-bringup (2.15.0-1jammy) jammy; urgency=high
+
+  * Proper launch of the rh8d driver
+    See merge request robots/kangaroo_robot!171
+  * Removing passing use_mimic to the rh8d
+    use_mimic now only controls the leg chain and it's passed down properly
+    the launch files
+  * Contributors: Sai Kishor Kothakota, Óscar Martínez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 06 Aug 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.14.1-1jammy) jammy; urgency=high
+
+  * Remove unused dependency kangaroo_moveit_config
+  * Contributors: Noel Jimenez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 06 Aug 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.14.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 30 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.13.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 06 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.13.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 06 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.13.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sun, 05 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.12.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sun, 05 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.12.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sat, 04 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.11.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 03 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.11.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 03 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.11.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 03 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.10.0-1jammy) jammy; urgency=high
+
+  * Add joystick analyzers
+    See merge request robots/kangaroo_robot!155
+  * Add joystick analyzers
+  * Contributors: Noel Jimenez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 01 Jul 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.9.0-1jammy) jammy; urgency=high
+
+  * Simplify controllers regeneration by dropping leg configuration variants
+  * Contributors: Isaac Acevedo
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 26 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.8.0-1jammy) jammy; urgency=high
+
+  * Change fakeforearm to 4dof with no end effector
+  * Contributors: Aina
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 25 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.7.0-1jammy) jammy; urgency=high
+
+  * Merge branch 'fix/imu_simulation' into 'humble-devel'
+    Fix imu simulation
+    See merge request robots/kangaroo_robot!143
+  * Add imu broadcaster arguments for simulation
+  * Merge branch 'feat/motion/homing' into 'humble-devel'
+    Standardize homing motions
+    See merge request robots/kangaroo_robot!140
+  * Rename full_homing motions to homing
+  * Add homing motion for lower body
+  * Contributors: Aina, Aina Irisarri, Noel Jimenez, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 23 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.6.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sun, 21 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.6.0-1jammy) jammy; urgency=high
+
+  * Add motions for lower body
+  * Add joystick_teleop module
+  * Add joy teleop configuration
+  * Contributors: Noel Jimenez, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 18 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.5.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 12 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.5.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 09 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.5.0-1jammy) jammy; urgency=high
+
+  * Merge branch 'feat/add_feet_type' into 'humble-devel'
+    Add feet type
+    See merge request robots/kangaroo_robot!108
+  * Use same string for pelvis than leg
+  * No feet_type need it in play_motion2
+  * Fix argument
+  * Comment feet_type until using it
+  * Fix flake8 tests
+  * Remove legs_type
+  * Contributors: Aina, Aina Irisarri
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 09 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.4.5-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 04 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.4.4-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 03 Jun 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.4.3-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Sun, 31 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.4.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 29 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.4.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 28 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.4.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 27 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.3.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 19 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.3.1-1jammy) jammy; urgency=high
+
+  * Merge branch 'fix/end_effector/arg_parsing' into 'humble-devel'
+    Fix end effector arg parsing
+    See merge request robots/kangaroo_robot!107
+  * parse arguments to play_motion2 module
+  * Fix kangaroo play_motion2 parsing
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 14 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.3.0-1jammy) jammy; urgency=high
+
+  * Merge branch 'feat/rm_cover_ee' into 'humble-devel'
+    Remove cover as ee option and just check ee when has_arms is True
+    See merge request robots/kangaroo_robot!101
+  * Fix comments RA8D to RH8D
+  * Remove cover as ee option and just check ee when has_arms is True
+  * Merge branch 'feat/add_tests' into 'humble-devel'
+    Add tests on bringup pkg
+    See merge request robots/kangaroo_robot!100
+  * Fix pep257 tests
+  * Add tests and solve flake8
+  * Merge branch 'fix/kangaroo_description' into 'humble-devel'
+    Fix/kangaroo description
+    See merge request robots/kangaroo_robot!98
+  * Add ft sensors
+  * Merge branch 'feat/move_arm' into 'humble-devel'
+    Move arm to pal_sea_arm_description
+    See merge request robots/kangaroo_robot!97
+  * Split end effectors into sides
+  * Merge branch 'fix/remove-prints' into 'humble-devel'
+    Remove leftover prints
+    See merge request robots/kangaroo_robot!96
+  * Remove leftover prints
+  * Contributors: Aina, Noel Jimenez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 12 May 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.2.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 14 Apr 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.1.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 06 Mar 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.1.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 05 Mar 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.1.0-1jammy) jammy; urgency=high
+
+  * added kangaroo moveit config dependency
+  * Contributors: sergiacosta
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 25 Feb 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.0.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 10 Feb 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (2.0.0-1jammy) jammy; urgency=high
+
+  * set last ros1 version
+  * updated version and metadeta
+  * renamed default broadcasters launchfile
+  * added playmotion2 module
+  * fix files bad naming
+  * added generation script
+  * added playmotion launchfile
+  * change file structure to inherit motions
+  * created bringup package
+  * updated packages to ros2
+  * removed old files
+  * Contributors: sergiacosta
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 04 Feb 2026 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.3.0-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * added gripper arg to robot launchfile
+  * added gripper configuration parameters
+  * updated motions for 7dof arm
+  * added arm_type argument
+  * added arm_type and robot_type argument logic
+  * updated config files for 7dof arm
+  * Contributors: Sai Kishor Kothakota, sergiacosta
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 04 Nov 2025 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.2.3-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 25 Sep 2025 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.2.2-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 24 Sep 2025 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.2.1-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Add demos_mode argument defaulting to true
+  * define and parse robot_type argument downstream
+  * Add meta information for the new motions
+  * Propagate changes from VIVE teleoperation + Automatica + RL
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 23 Sep 2025 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.2.0-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Add run pose and sumo pose of the photoshoot
+  * first draft
+  * Contributors: Luca Marchionni, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 15 Sep 2025 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.18-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * update the robot_type arg
+  * optimize the bringup with the launch argument robot_type
+  * Set arguments and launch files for different robot configurations
+  * 0.1.17
+  * Update Changelog
+  * Add pelvis and full_homing play_motion configurations
+  * adding parameters for pelvis and legs
+  * remove duplicated motions
+  * tested motions on the robot for standing up from ground
+  * Testing on the robot
+  * Contributors: Adrià Roig, Luca Marchionni, Sai Kishor Kothakota, ileniaperrella
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 22 May 2025 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.17-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 05 Mar 2025 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.16-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adrià Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 03 Feb 2025 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.15-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 30 Sep 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.14-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 16 Sep 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.13-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 10 Sep 2024 12:56:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.12-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adrià Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 10 Sep 2024 12:17:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.11-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adrià Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 01 Aug 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.10-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 25 Jul 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.9-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adrià Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 16 Jul 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.8-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 12 Jul 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.7-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 11 Jul 2024 14:56:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.6-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 11 Jul 2024 10:30:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.5-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 09 Jul 2024 18:08:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.4-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Add fake_walking and fake_walking2 play_motion motions
+  * Open ref_velocity port and change IMU Hw transformation
+  * Fix the enu transformation of the imu
+  * fix play_motion range for leg_exploration
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 09 Jul 2024 18:03:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.3-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 30 Apr 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.2-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 19 Apr 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.1-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * add version argument to all launch files using upload.launch
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 18 Apr 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.1.0-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 04 Apr 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.30-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 10 Jan 2024 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.29-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 08 Nov 2023 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.28-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 04 Jul 2023 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.27-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * added the proper configuration of the bota FTs
+  * add new bringup controllers and use common hardware file based on ft_sensors argument
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 07 Feb 2023 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.26-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Remove fixed from sole & ft_sensor joints
+  * Fix ft sensor transformations
+  * Update homing and launch force_torque_sensor_controller when ft_sensors is true
+  * Contributors: Adria Roig, Adrià Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 17 Jan 2023 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.25-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * added joy_teleop and twist_mux files to kangaroo_bringup
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 12 Jan 2023 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.24-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Added use_case argument to the kangaroo.urdf.xacro and other files
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 22 Dec 2022 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.23-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 03 Oct 2022 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.22-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 30 Sep 2022 14:21:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.21-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Add F/T sensors in Gazebo for simplicity in the experiments
+  * 0.0.20
+  * Update Changelog
+  * 0.0.19
+  * Update Changelog
+  * added more package dependencies to the packages
+  * Adapt motion home to real robot limits
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 30 Sep 2022 10:25:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.18-1jammy) jammy; urgency=high
+
+  * Update changelogs
+  * Contributors: Narcis Miguel
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 25 Mar 2022 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.17-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 14 Mar 2022 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.16-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 11 Mar 2022 12:01:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.15-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 11 Mar 2022 10:24:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.14-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 11 Mar 2022 09:10:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.13-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Wed, 26 Jan 2022 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.12-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Adria Roig
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 10 Jan 2022 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.11-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Fix IMU wrong orientation
+  * Solved issue #1 regarding improving homing procedure. Still something
+    more can be done in order to use it as a service everytime is needed.
+  * Contributors: Adria Roig, enricomingo
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 28 Dec 2021 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.10-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Mv homing motion to kangaroo motions
+  * Added files for play_motion homing
+  * Contributors: Adria Roig, enricomingo
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 22 Nov 2021 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.9-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * added kangaroo initial motions
+  * added the both legs configuration
+  * added play_motion setup without motions
+  * Contributors: Adria Roig, Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 18 Nov 2021 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.8-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 10 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.7-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Tue, 07 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.6-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 06 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.5-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Fri, 03 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.4-1jammy) jammy; urgency=high
+
+  * Update Changelog
+  * remove the force torque sensors information
+  * add the IMU hardware configuration
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Thu, 02 Sep 2021 00:00:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.3-1jammy) jammy; urgency=high
+
+  * Updated Changelog
+  * Contributors: Victor Lopez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 30 Aug 2021 10:51:00 -0000
+
+ros-humble-kangaroo-bringup (0.0.2-1jammy) jammy; urgency=high
+
+  * Add changelog
+  * Fix package version
+  * Adding new pids and ff term ports
+  * Add F/T sensor
+  * Fix primatic model. Add IMU. Tune PIDS
+  * First commit
+  * Contributors: Adria Roig, Jordan Palacios, Luca Marchionni, Victor Lopez
+
+ -- "Sergi de las Muelas" <sergi.acosta@pal-robotics.com>  Mon, 30 Aug 2021 09:26:00 -0000
+
+
