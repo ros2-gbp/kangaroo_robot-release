@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="kangaroo">
+  <xacro:include filename="$(find kangaroo_description)/urdf/ankle/detachable_foot_frames.urdf.xacro" />
+  <xacro:property name="eps_radians"      value="0.008" /> <!-- 0.45deg -->
+  <xacro:property name="pitch_joint_min_pos"   value="${-42.5 *deg_to_rad}" />
+  <xacro:property name="pitch_joint_max_pos"   value="${38.0 *deg_to_rad}" />
+  <xacro:property name="roll_joint_min_pos"   value="${-27.0 *deg_to_rad}" />
+  <xacro:property name="roll_joint_max_pos"   value="${27.0 *deg_to_rad}" />
+
+  <xacro:macro name="kangaroo_detachable_ankle"
+    params="side reflect parent *origin pitch_joint roll_joint read_actuator full_model:='false'">
+    <link name="leg_${side}_${pitch_joint}_link">
+      <inertial>
+          <origin xyz="-0.002212 0.0 -0.000833" rpy="0 0 0" />
+          <mass value="0.132674" />
+          <inertia ixx="0.000017" ixy="0.0" ixz="0.000008"
+                    iyy="0.000031" iyz="0.0"
+                    izz="0.000036" />
+      </inertial>
+      <visual>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+              <mesh filename="package://kangaroo_description/meshes/leg/leg_ankle_cross.stl" />
+          </geometry>
+              <material name="pal/DarkGrey" />
+      </visual>
+      <xacro:link_collision 
+        mujoco="${sim_type in ['mujoco-ros2-control', 'mujoco']}"
+        collision_type="${collision_type}"
+        mesh_file="package://kangaroo_description/meshes/leg/leg_ankle_cross.stl"
+        scale="1 ${reflect} 1">
+          <properties>
+            <xacro:origin xyz="0 0 0" rpy="0 ${-20.0 * deg_to_rad} 0" condition="${collision_type == 'mesh'}"/>
+            <xacro:origin xyz="0 0 0" rpy="0 0 0" condition="${collision_type == 'capsule'}"/>
+          </properties>
+      </xacro:link_collision>
+
+    </link>
+
+    <joint name="leg_${side}_${pitch_joint}_joint" type="revolute">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}" />
+      <child link="leg_${side}_${pitch_joint}_link" />
+      <axis xyz="0 1 0" /> 
+      <limit lower="${pitch_joint_min_pos}" upper="${pitch_joint_max_pos}" effort="140" velocity="3.87" />
+    </joint>
+
+    <link name="leg_${side}_${roll_joint}_link">
+      <inertial>
+        <origin xyz="-0.014212 0.000031 -0.015062" rpy="0 0 0" />
+        <mass value="0.16804" />
+        <inertia ixx="0.000051" ixy="0.0" ixz="0.000006"
+                 iyy="0.000135" iyz="0.0"
+                 izz="0.000152" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://kangaroo_description/meshes/leg/leg_ankle.stl" />
+        </geometry>
+        <material name="pal/DarkGrey" />
+      </visual>
+      <xacro:link_collision 
+        mujoco="${sim_type in ['mujoco-ros2-control', 'mujoco']}"
+        collision_type="${collision_type}"
+        mesh_file="package://kangaroo_description/meshes/leg/leg_ankle.stl"
+        scale="1 ${reflect} 1">
+        <properties>
+            <xacro:origin xyz="0 0 0" rpy="0 0 0" condition="${collision_type == 'mesh'}"/>
+            <xacro:origin xyz="0.0349999939117332 ${reflect * -2.55850040738657e-11} -0.0200000000271849" rpy="0 ${-110.0 * deg_to_rad} 0" condition="${collision_type == 'capsule'}"/>
+          </properties>
+      </xacro:link_collision>
+    </link>
+    <joint name="leg_${side}_${roll_joint}_joint" type="revolute">
+      <origin xyz="0 0 0" rpy="0 ${20.0 * deg_to_rad} 0" />
+      <parent link="leg_${side}_${pitch_joint}_link" />
+      <child link="leg_${side}_${roll_joint}_link" />
+      <axis xyz="-1 0 0" />
+      <limit lower="${roll_joint_min_pos}" upper="${roll_joint_max_pos}" effort="82" velocity="3.87" />
+    </joint>
+
+    <link name="leg_${side}_ankle_attach">
+      <inertial>
+        <origin xyz="0.0016478 0.001648 0.0053101" rpy="0 0 0" />
+        <mass value="0.088641" />
+        <inertia ixx="0.000022" ixy="0.0" ixz="-0.000001"
+                 iyy="0.000027" iyz="0.0"
+                 izz="0.000046" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://kangaroo_description/meshes/leg/leg_ankle_attach.stl" />
+        </geometry>
+        <material name="pal/DarkGrey" />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://kangaroo_description/meshes/leg/leg_ankle_attach.stl" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- CLOSED LOOP CONNECTION FRAMES FOR THE ANKLE -->
+    <xacro:if value="${full_model}">
+      <link name="${side}_ankle_tibia_bar_l_connect_b">
+        <inertial>
+          <origin xyz="1e-05 1e-05 1e-05" rpy="0 0 0" />
+          <mass value="1e-05" />
+          <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="1e-05" iyz="0.0" izz="1e-05" />
+        </inertial>
+      </link>
+      <joint name="${side}_ankle_tibia_bar_l_connect_b" type="fixed">
+        <origin xyz="-0.05638 0.03390 0.0590" rpy="1.57079632679491 -0.34906585039887 3.14159265358978" />
+        <parent link="leg_${side}_ankle_attach" />
+        <child link="${side}_ankle_tibia_bar_l_connect_b" />
+        <axis xyz="0 0 0" />
+      </joint>
+      <link name="${side}_ankle_tibia_bar_r_connect_b">
+        <inertial>
+          <origin xyz="1e-05 1e-05 1e-05" rpy="0 0 0" />
+          <mass value="1e-05" />
+          <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="1e-05" iyz="0.0" izz="1e-05" />
+        </inertial>
+      </link>
+      <joint name="${side}_ankle_tibia_bar_r_connect_b" type="fixed">
+        <origin xyz="-0.05638 -0.03390 0.0590" rpy="1.57079632679491 -0.34906585039887 3.14159265358978" />
+        <parent link="leg_${side}_ankle_attach" />
+        <child link="${side}_ankle_tibia_bar_r_connect_b" />
+        <axis xyz="0 0 0" />
+      </joint>
+    </xacro:if>
+
+    <joint name="leg_${side}_ankle_attach_joint" type="fixed">
+      <origin xyz="0.013168 0 -0.036178" rpy="0 -${20 * deg_to_rad} 0" />
+      <parent link="leg_${side}_${roll_joint}_link" />
+      <child link="leg_${side}_ankle_attach" />
+      <axis xyz="1 0 0" />
+    </joint>
+    <xacro:kangaroo_detachable_foot_frames side="${side}" parent="leg_${side}_ankle_attach" />
+  </xacro:macro>
+
+</robot>
