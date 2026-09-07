@@ -1,3 +1,30 @@
+## kangaroo_robot (humble) - 2.15.1-1
+
+The packages in the `kangaroo_robot` repository were released into the `humble` distro by running `/usr/bin/bloom-release --track humble --rosdistro humble kangaroo_robot -y` on `Mon, 07 Sep 2026 12:42:57 -0000`
+
+These packages were released:
+- `kangaroo_bringup`
+- `kangaroo_controller_configuration`
+- `kangaroo_description`
+- `kangaroo_robot`
+
+Version of package(s) in repository `kangaroo_robot`:
+
+- upstream repository: https://github.com/pal-robotics/kangaroo_robot.git
+- release repository: https://github.com/ros2-gbp/kangaroo_robot-release.git
+- rosdistro version: `2.15.0-1`
+- old version: `2.15.0-1`
+- new version: `2.15.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## kangaroo_robot (humble) - 2.15.0-1
 
 The packages in the `kangaroo_robot` repository were released into the `humble` distro by running `/usr/bin/bloom-release --track humble --rosdistro humble kangaroo_robot -y` on `Wed, 19 Aug 2026 06:30:06 -0000`
