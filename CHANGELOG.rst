@@ -2,6 +2,9 @@
 Changelog for package kangaroo_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.15.1 (2026-08-21)
+-------------------
+
 2.15.0 (2026-08-06)
 -------------------
 * Proper launch of the rh8d driver
